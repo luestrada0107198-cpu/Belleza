@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Belleza &amp; Estilo | Uñas, Alaciados y Pestañas en León, Gto.</title>
+        <meta name="description" content="Estudio de belleza en León, Guanajuato. Uñas, alaciados, pestañas y más. Agenda tu cita por WhatsApp." />
+        <meta name="theme-color" content="#f8e3e8" />
+
+        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="Style/Estilos.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header sticky-top" id="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="#inicio" class="navbar-brand logo" id="logoNombre">Belleza <span>&amp; Estilo</span></a>
+
+                    <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false"
+                            aria-label="Abrir menú de navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navPrincipal">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            <li class="nav-item ms-lg-2"><a href="#citas" class="btn btn-primary rounded-pill px-4">Agendar cita</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="hero" id="inicio">
+                <div class="hero-shade"></div>
+                <div class="container hero-content">
+                    <div class="row align-items-center g-5 min-vh-hero">
+                        <!-- Texto principal -->
+                        <div class="col-lg-6 hero-copy">
+                            <span class="eyebrow hero-eyebrow"><i class="bi bi-stars me-2"></i>Tu momento, tu belleza</span>
+                            <p class="hero-tagline" id="heroTagline">Belleza que se siente, estilo que se nota</p>
+                            <h1 class="hero-title" id="heroTitulo">Realza tu <em>belleza natural</em></h1>
+                            <p class="hero-sub" id="heroSubtitulo">Uñas, alaciados, pestañas y tratamientos de belleza en León, Guanajuato.</p>
+
+                            <div class="hero-buttons d-flex flex-wrap gap-3 mt-4">
+                                <a href="#citas" class="btn btn-primary btn-lg rounded-pill px-4">Agenda tu cita <i class="bi bi-arrow-up-right ms-2"></i></a>
+                                <a href="#servicios" class="btn btn-light-outline btn-lg rounded-pill px-4">Descubre los servicios</a>
+                            </div>
+
+                            <div class="hero-note mt-4"><i class="bi bi-heart-fill me-2"></i>Un espacio para consentirte y sentirte increíble.</div>
+                        </div>
+
+                        <!-- Fotografía principal -->
+                        <div class="col-lg-6 hero-imagen-contenedor">
+                            <div class="hero-imagen-marco">
+                                <img
+                                    src="assets/img/cinthia.png"
+                                    alt="Cinthia, especialista en belleza"
+                                    class="hero-imagen"
+                                    />
+                                <span class="hero-imagen-sello"><i class="bi bi-heart-fill me-2"></i>Un momento para ti</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#servicios" class="hero-scroll" aria-label="Desplazarse a servicios"><i class="bi bi-arrow-down"></i></a>
+            </section>
+
+            <!-- SERVICIOS -->
+            <section class="section" id="servicios">
+                <div class="container">
+                    <div class="section-header text-center mx-auto">
+                        <span class="section-sub">Un toque especial para ti</span>
+                        <h2 class="section-title">Nuestros <em>servicios</em></h2>
+                        <p class="section-desc">Dedícate un momento. Encuentra tu próximo look favorito y solicita tu cita por WhatsApp.</p>
+                    </div>
+
+                    <div class="filtros d-flex flex-wrap justify-content-center gap-2 mb-4" id="filtrosServicios">
+                        <button type="button" class="filtro active" data-categoria="todas">Todos</button>
+
+                        <button type="button" class="filtro" data-categoria="uñas">Uñas</button>
+                        <button type="button" class="filtro" data-categoria="cabello">Alaciados</button>
+                        <button type="button" class="filtro" data-categoria="pestañas">Pestañas</button>
+                    </div>
+
+                    <div class="row g-4 servicios-grid" id="gridServicios">
+                        <!-- Los servicios se generan con JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALERÍA -->
+            <section class="section section-alt" id="galeria">
+                <div class="container">
+                    <div class="section-header text-center mx-auto">
+                        <span class="section-sub">Detalles que enamoran</span>
+                        <h2 class="section-title">Nuestro <em>trabajo</em></h2>
+                        <p class="section-desc">Inspírate con estilos, colores y resultados. Cada detalle cuenta.</p>
+                    </div>
+
+                    <div class="filtros d-flex flex-wrap justify-content-center gap-2 mb-4" id="filtrosGaleria">
+                        <button type="button" class="filtro active" data-categoria="todas">Todas</button>
+                        <button type="button" class="filtro" data-categoria="uñas">Uñas</button>
+                        <button type="button" class="filtro" data-categoria="cabello">Alaciados</button>
+                        <button type="button" class="filtro" data-categoria="pestañas">Pestañas</button>
+                    </div>
+
+                    <div class="row g-3 g-md-4 galeria-grid" id="gridGaleria">
+                        <!-- La galería se genera con JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROMOCIONES -->
+            <section class="section" id="promociones">
+                <div class="container">
+                    <div class="promo-banner mb-5">
+                        <div class="promo-banner-content">
+                            <span class="eyebrow">Un detalle para ti</span>
+                            <h2>Tu próxima experiencia de belleza <em>te espera</em></h2>
+                            <p>Descubre nuestras promociones y elige el servicio perfecto para consentirte.</p>
+                        </div>
+                        <div class="promo-banner-icon" aria-hidden="true"><i class="bi bi-gift"></i></div>
+                    </div>
+
+                    <div class="section-header text-center mx-auto">
+                        <span class="section-sub">Consiente tu estilo</span>
+                        <h2 class="section-title">Promociones <em>especiales</em></h2>
+                        <p class="section-desc">Consulta las ofertas vigentes y solicita los detalles directamente por WhatsApp.</p>
+                    </div>
+
+                    <div class="row g-4 promociones-grid" id="gridPromociones">
+                        <!-- Las promociones se generan con JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CITAS -->
+            <section class="section section-citas" id="citas">
+                <div class="container">
+                    <div class="section-header text-center mx-auto">
+                        <span class="section-sub">Tu momento empieza aquí</span>
+                        <h2 class="section-title">Agenda tu <em>cita</em></h2>
+                        <p class="section-desc">Cuéntanos qué servicio deseas. Te contactaremos por WhatsApp para confirmar disponibilidad.</p>
+                    </div>
+
+                    <div class="row justify-content-center align-items-start g-4">
+                        <div class="col-lg-4">
+                            <aside class="cita-aside">
+                                <span class="cita-aside-icon"><i class="bi bi-calendar-heart"></i></span>
+                                <h3>Un momento solo para ti</h3>
+                                <p>Completa tus datos y envía tu solicitud. La fecha y la hora quedarán pendientes hasta que el estudio las confirme.</p>
+                                <ul class="cita-beneficios">
+                                    <li><i class="bi bi-check-circle-fill"></i><span>Elige el servicio que te encanta</span></li>
+                                    <li><i class="bi bi-check-circle-fill"></i><span>Indica tu fecha preferida</span></li>
+                                    <li><i class="bi bi-check-circle-fill"></i><span>Confirma directamente por WhatsApp</span></li>
+                                </ul>
+                                <div class="cita-aside-note"><i class="bi bi-chat-heart me-2"></i>¡Será un gusto atenderte!</div>
+                            </aside>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <form class="form-cita" id="formCita" novalidate>
+                                <div class="form-heading mb-4">
+                                    <span class="form-step">TU RESERVACIÓN</span>
+                                    <h3>Solicita tu cita</h3>
+                                    <p>Los campos marcados con * son obligatorios.</p>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6 form-group">
+                                        <label for="nombre">Nombre completo <span>*</span></label>
+                                        <div class="input-icon"><i class="bi bi-person"></i><input type="text" class="form-control" id="nombre" name="nombre" required autocomplete="name" placeholder="¿Cómo te llamas?" /></div>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <label for="telefono">Teléfono de contacto <span>*</span></label>
+                                        <div class="input-icon"><i class="bi bi-telephone"></i><input type="tel" class="form-control" id="telefono" name="telefono" required autocomplete="tel" inputmode="tel" placeholder="Ej. 4771234567" /></div>
+                                    </div>
+
+                                    <div class="col-md-7 form-group">
+                                        <label for="servicio">Servicio que deseas <span>*</span></label>
+                                        <div class="input-icon"><i class="bi bi-stars"></i><select class="form-select" id="servicio" name="servicio" required><option value="">Selecciona un servicio</option></select></div>
+                                        <small id="detalleServicio" class="field-help">Elige un servicio para ver su duración aproximada.</small>
+                                    </div>
+
+                                    <div class="col-md-5 form-group">
+                                        <label for="precio">Precio</label>
+                                        <div class="input-icon"><i class="bi bi-tag"></i><input type="text" class="form-control" id="precio" name="precio" readonly placeholder="Se mostrará aquí" /></div>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <label for="fecha">Fecha deseada <span>*</span></label>
+                                        <div class="input-icon"><i class="bi bi-calendar3"></i><input type="date" class="form-control" id="fecha" name="fecha" required /></div>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <label for="hora">Hora preferida <span>*</span></label>
+                                        <div class="input-icon"><i class="bi bi-clock"></i><input type="time" class="form-control" id="hora" name="hora" required /></div>
+                                    </div>
+
+                                    <div class="col-12 form-group">
+                                        <label for="comentarios">Comentarios <small>(opcional)</small></label>
+                                        <div class="input-icon input-icon-top"><i class="bi bi-chat-left-text"></i><textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="¿Tienes alguna preferencia o detalle que debamos saber?"></textarea></div>
+                    </div>
+                  </div>
+
+                  <div class="form-resumen mt-4" id="resumenCita" hidden>
+                    <h4><i class="bi bi-clipboard2-heart me-2"></i>Resumen de tu solicitud</h4>
+                    <ul id="listaResumen"></ul>
+                  </div>
+
+                  <p class="form-aviso mt-4"><i class="bi bi-info-circle me-2"></i>WhatsApp se abrirá con tu mensaje preparado. Deberás enviarlo desde WhatsApp. Tu cita no estará confirmada hasta que el estudio te responda.</p>
+
+                  <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100 mt-2">Enviar solicitud por WhatsApp <i class="bi bi-whatsapp ms-2"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+          <div class="container">
+            <div class="section-header text-center mx-auto">
+              <span class="section-sub">Nos encantará conocerte</span>
+              <h2 class="section-title">Estamos para <em>ti</em></h2>
+              <p class="section-desc">¿Tienes dudas? Escríbenos y con gusto te compartimos más información.</p>
+            </div>
+
+            <div class="row g-4 contacto-grid">
+              <div class="col-sm-6 col-xl-3">
+                <div class="contacto-card h-100">
+                  <div class="contacto-icon"><i class="bi bi-geo-alt"></i></div>
+                  <h3>Dirección</h3>
+                  <p id="contactoDireccion">San Ancelmo # 117, Plan de ayala(Santa Rosa)</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="contacto-card h-100">
+                  <div class="contacto-icon"><i class="bi bi-whatsapp"></i></div>
+                  <h3>WhatsApp</h3>
+                  <p id="contactoWhatsapp">Contáctanos para más información</p>
+                  <a href="#" id="btnWhatsContacto" class="btn btn-outline-primary rounded-pill mt-2" target="_blank" rel="noopener noreferrer">Escribirnos</a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="contacto-card h-100">
+                  <div class="contacto-icon"><i class="bi bi-share"></i></div>
+                  <h3>Redes sociales</h3>
+                  <div class="redes" id="redesSociales"><!-- Se genera con JavaScript --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-inner text-center">
+            <a href="#inicio" class="footer-nombre" id="footerNombre">Belleza &amp; Estilo</a>
+            <p class="footer-copy mb-2">© <span id="year"></span> — Todos los derechos reservados.</p>
+            <p class="footer-note mb-0">Un sitio pensado para ti. Las solicitudes de cita se confirman por WhatsApp.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- WHATSAPP FLOTANTE -->
+      <a href="#" id="btnWhatsFloat" class="whats-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        <span class="whats-float-label">¿Agendamos?</span>
+      </a>
+
+      <button type="button" id="btnArriba" class="btn-arriba" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Configuración antes del script principal, si existe -->
+      <script src="js/Js.js"></script>
+    </body>
+    </html>
